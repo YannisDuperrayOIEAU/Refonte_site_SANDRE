@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class accueil extends Controller
 {
     public function show(){
-        return view('accueil');
+        $rubriques_menu = config('config_menu.rubriques');
+        return view('accueil', compact('rubriques_menu'));
     }
 }

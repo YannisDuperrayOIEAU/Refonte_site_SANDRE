@@ -109,7 +109,9 @@
                 <div id='header_icones_div'>Icônes</div>
             </div>
             <div id='header_menu_div'>
-                @yield('rubriques')
+                @foreach ($rubriques_menu as $rubrique)
+                    {{$rubrique}}
+                @endforeach
             </div>
         </header>
         <div id='contenu'>
